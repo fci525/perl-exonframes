@@ -27,7 +27,7 @@ in the lib/ directory:
 INSTALLATION (optional)
 -----------------------
 
-You can install this module type the following:
+You can install this module by typing the following:
 
    perl Makefile.PL
    make
