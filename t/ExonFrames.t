@@ -75,11 +75,13 @@ my @exons = (
       "CGAAAAAAAAAAAAAAACCCCCT",
       "ACTAGATCAT",
     ],
+
     [ "ACTAGCCATTACGA",
       "TTACCATTACCAGGATTATA",
       "CGAAAAAAAAAAAAAAACCCCCT",
       "ACTAGATCATC",
     ],
+
     [ "ATGACCTATCAGACCAGTC" ],
 );
 
