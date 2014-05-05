@@ -83,7 +83,7 @@ Next, `frames.pl` will send `aln.aln-clustal.clustal` to BOXSHADE at http://www.
 This will produce two new files:
 
     aln_boxshade.rtf                <- the alignment boxshaded
-    aln_boxxshade_frames.rtf        <- the BOXSHADE version with frame markers
+    aln_boxshade_frames.rtf        <- the BOXSHADE version with frame markers
 
 There will be several additional files produced by Clustal Omega and `frames.pl` which may be of some interest, but are not the focus of this documentation. Feel free to browse the examples in the `TEST/` directory.
 
