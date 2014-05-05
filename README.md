@@ -2,7 +2,7 @@ ExonFrames
 ==========
 
 ExonFrames is a set of functions which can notate the reading frames
-of exons in a multiple alignment of some number of genes. Included
+of exons in a multiple alignment of some number of proteins. Included
 is `frames.pl`, a small client which puts this into practice, as well
 as some sample gene files and sample outputs.
 
