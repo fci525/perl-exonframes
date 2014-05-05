@@ -477,7 +477,7 @@ __END__
 
 =head1 NAME
 
-ExonFrames - a set of functions to notate the reading frames of exons in protein multiple alignments
+ExonFrames - a set of functions to notate the reading frames of codons in protein multiple alignments relative to exon borders
 
 =head1 SYNOPSIS
 
