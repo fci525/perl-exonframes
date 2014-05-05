@@ -26,15 +26,9 @@ in the `lib/` directory:
 
 ### INSTALLATION (optional)
 
-You can install this module by typing the following:
-
-    perl Makefile.PL
-    make
-    make test
-    make install
-
-Or you can just download the files using the `Download ZIP` button
-on the right and run them from the unzipped folder.
+For now don't try to install this as a perl module. You can just download
+the files using the `Download ZIP` button on the right and run them from
+the unzipped folder.
 
 ### USAGE (of `frames.pl`)
 
