@@ -36,6 +36,60 @@ You can install this module by typing the following:
 Or you can just download the files using the `Download ZIP` button
 on the right and run them from the unzipped folder.
 
+### Usage
+
+    perl frames.pl [-d DIR] file1 file2 [file3 ...]
+
+##### Options:
+
+    --help              Will show this help page.
+
+    -d          DIR     The value of DIR will be the directory where all
+                        files produced will be located, and will be the
+                        prefix in all of their names.
+                        Default: ALN
+
+#### DESCRIPTION
+
+`frames.pl` accepts any number (greater than 0) of input files, each of which should contain the sequences of all exons for a given gene. Each exon should begin with a FASTA identification line, with no extra lines in the file. In other words, for each gene, you want a file that looks something like this, with only FASTA lines and exon sequence data:
+
+    >exon1
+    ATGGACTG...................................................
+    >exon2
+    TACAT......................................................
+    >exon3
+    TATTACGACGTA...............................................
+
+It doesn't matter what the `>` id line says, as it will be stripped off, but each exon should have one to separate them from one another. `frames.pl` ignores lower-case letters in the sequences, so keep that in mind when creating the input files. `frames.pl` will then ask the user for a name for each gene. These names will be the labels on the left side of the alignment files generated.
+
+The `DIR` value supplied to the `-d` option will be the name of the folder where all the files are located, and the prefix for all the file names. The default value if you don't supply one is "aln".
+
+##### Clustal
+
+`frames.pl` will send the genes you supplied to Clustal Omega at:
+
+    https://www.ebi.ac.uk/Tools/msa/clustalo/
+
+This will produce a number of files, including (assuming the `-d` option was not given and all files are prefixed with "aln"):
+
+    aln.aln-clustal.clustal         <- the alignment with no line numbers
+    aln.aln-clustal_num.clustal_num <- the alignnment with line numbers
+    aln_frames.txt                  <- with numbers and frame markers
+    aln_box_frames.txt              <- just frame markers, no alignment
+
+##### BOXSHADE
+
+Next, `frames.pl` will send `aln.aln-clustal.clustal` to BOXSHADE at:
+
+    http://www.ch.embnet.org/software/BOX_form.html
+
+This will produce two new files:
+
+    aln_boxshade.rtf                <- the alignment boxshaded
+    aln_boxxshade_frames.rtf        <- the BOXSHADE version with frame markers
+
+There will be several additional files produced by Clustal Omega and `frames.pl` which may be of some interest, but are not the focus of this documentation. Feel free to browse them.
+
 ### DEPENDENCIES
 
 This module does not require any non-core modules, but the included
