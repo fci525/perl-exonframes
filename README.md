@@ -15,7 +15,7 @@ would get from `frames.pl` by running:
 
     perl frames.pl -d test exons/*
 
-For more usage information, try:
+To display the same usage information listed below, use:
 
     perl frames.pl --help
 
