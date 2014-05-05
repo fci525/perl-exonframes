@@ -20,7 +20,8 @@ To display the same usage information listed below, use:
     perl frames.pl --help
 
 You can also try running `perldoc` on the `ExonFrames.pm` file found
-in the `lib/` directory:
+in the `lib/` directory for more information about the functions in
+ExonFrames:
 
     perldoc ExonFrames.pm
 
