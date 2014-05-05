@@ -36,11 +36,11 @@ You can install this module by typing the following:
 Or you can just download the files using the `Download ZIP` button
 on the right and run them from the unzipped folder.
 
-### Usage
+### USAGE
 
     perl frames.pl [-d DIR] file1 file2 [file3 ...]
 
-##### Options:
+#### OPTIONS
 
     --help              Will show this help page.
 
@@ -64,7 +64,7 @@ It doesn't matter what the `>` id line says, as it will be stripped off, but eac
 
 The `DIR` value supplied to the `-d` option will be the name of the folder where all the files are located, and the prefix for all the file names. The default value if you don't supply one is "aln".
 
-##### Clustal
+##### CLUSTAL
 
 `frames.pl` will send the genes you supplied to Clustal Omega at:
 
