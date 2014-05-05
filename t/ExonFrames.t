@@ -63,11 +63,13 @@ for ( my $i = 0; $i < scalar(@dna_seqs); ++$i ) {
 ##### Test frame line generation
 
 my @exons = (
+
     [ "ACTAGCCATTACGA",
       "TTACCATTACCAGGATTATA",
       "CGAAAAAAAAAAAAAAACCCCCT",
       "ACTAGATCA",
     ],
+
     [ "ACTAGCCATTACGA",
       "TTACCATTACCAGGATTATA",
       "CGAAAAAAAAAAAAAAACCCCCT",
