@@ -231,7 +231,7 @@ frames.pl will send the genes you supplied to Clustal Omega at:
 This will produce a number of files, including (assuming the -d option was not given and all files are prefixed with "aln"):
 
     aln.aln-clustal.clustal         <- the alignment with no line numbers
-    aln.aln-clustal_num.clustal_num <- the alignnment with line numbers
+    aln.aln-clustal_num.clustal_num <- the alignment with line numbers
     aln_frames.txt                  <- with numbers and frame markers
     aln_box_frames.txt              <- just frame markers, no alignment
 
