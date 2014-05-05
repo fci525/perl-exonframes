@@ -88,7 +88,7 @@ There will be several additional files produced by Clustal Omega and `frames.pl`
 
 ### DEPENDENCIES
 
-This module does not require any non-core modules, but the included
+The ExonFrames module does not require any non-core modules, but the included
 frames.pl client does. They are these:
 
     SOAP::Lite
