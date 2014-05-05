@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 
+#
+# imports and whatnot
+#
+
 use Getopt::Long;
 use Pod::Usage;
 use File::Basename;
@@ -12,6 +16,10 @@ use lib dirname(__FILE__) . '/lib';
 use ExonFrames ':all';
 
 my $dir = dirname(__FILE__);
+
+#
+# get options and args and throw errors if they're wrong
+#
 
 my $help        = '';
 my $file_prefix = '';
@@ -37,11 +45,19 @@ elsif ( not @files ) {
 
 $file_prefix = $file_prefix || "aln";
 
+#
+# make the output directory if possible, die if not; define file path
+#
+
 unless ( -e uc($file_prefix) || mkdir( uc($file_prefix) ) ) {
     die "Could not create directory: " . uc($file_prefix);
 }
 
 my $aln_path = uc($file_prefix) . "/$file_prefix";
+
+#
+# get the AA seqs, framelines, and names for each gene
+#
 
 my @aa_seqs;
 my @framelines;
@@ -67,6 +83,10 @@ foreach my $file (@files) {
     push( @gene_names, $gene_name );
 }
 
+#
+# generate a FASTA file of all protein seqs, send it to clustal
+#
+
 my @fasta_output = fasta_format( \@aa_seqs, \@gene_names );
 
 open( my $output, '>', "$aln_path.sequence.txt" )
@@ -78,6 +98,9 @@ print "\nEnter an email address for Clustal Omega (you will receive your "
   . "results immediately, but Clustal requires an email address be given): ";
 my $email = <STDIN>;
 $email =~ s/\s//g;
+
+# runs twice because BOXSHADE needs the no numbers version, but people like
+# the version WITH numbers. so get both.
 
 print "\n==== RUNNING CLUSTAL ====\n";
 
@@ -119,6 +142,10 @@ print $output @clustal_out;
 close($output);
 
 print "===== CLUSTAL DONE ======\n\n";
+
+#
+# now we take the outputs from clustal_frames() and send them to BOXSHADE
+#
 
 my $box_url = 'http://ch.embnet.org/software/BOX_form.html';
 

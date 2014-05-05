@@ -57,12 +57,15 @@ my %amino_acids = (
     "*" => [ "TAA", "TAG", "TGA" ],
 );
 
+# takes lines from a FASTA file with exon seqs for a gene, returns an array
+# of the sequences joined and stripped of the FASTA lines
 sub exon_split {
     my @lines = @_;
     my @exons;
 
     my $in_line;
     my $cur_exon;
+    my $invalid;
 
     foreach my $line (@lines) {
         if ( $line =~ /^>/ ) {
@@ -74,11 +77,11 @@ sub exon_split {
         elsif ( $line =~ /[A-Z]/ ) {
             $in_line = $line;
 
-            $in_line =~ s/\s*$//g;
+            $in_line =~ s/\s{1,2}$//g;
             $line =~ s/[^ACTG]//g;
 
             unless ( $in_line eq $line ) {
-                print "WARNING: invalid characters in exon sequence\n";
+                $invalid = 1;
             }
 
             $cur_exon .= $line;
@@ -87,9 +90,14 @@ sub exon_split {
 
     push( @exons, $cur_exon );
 
+    if ( $invalid ) {
+        print "WARNING: invalid characters in exon sequence were removed\n";
+    }
+
     return @exons;
 }
 
+# takes a DNA seq, returns its AA translation
 sub translate {
     my $dna_seq = shift;
 
@@ -123,6 +131,9 @@ sub translate {
     return $aa_seq;
 }
 
+# given a DNA sequence, its translation, and the sequences of its exons,
+# this returns a line with markers (<, >, or ^) indicating how the codons
+# line up with the exon borders.
 sub frame_line {
     my ( $dna_seq, $aa_seq, @exons ) = @_;
 
@@ -161,6 +172,9 @@ sub frame_line {
     return $gene_frame_line;
 }
 
+# takes a number and a string, and returns an array with the string wrapped
+# to that number of characters. designed for sequences, so it makes no attempt
+# at word identification. every line gets a "\n" character at the end.
 sub line_wrap {
     my ( $line_wrap, $dna_seq ) = @_;
 
@@ -183,6 +197,9 @@ sub line_wrap {
     return @seq_list;
 }
 
+# takes two array refs, one with the AA seqs for a set of proteins, the other
+# with the names of those genes. returns an array with lines for a FASTA output
+# file with all protein sequences for Clustal.
 sub fasta_format {
     my ( $aa_seq_ref, $gene_name_ref ) = @_;
 
