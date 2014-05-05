@@ -1,9 +1,10 @@
-Changes
+CHANGES
 clustalo_soaplite.pl
 frames.pl
+LICENSE.md
 Makefile.PL
 MANIFEST
-README
+README.md
 t/ExonFrames.t
 lib/ExonFrames.pm
 exons/anpep_exons.txt
