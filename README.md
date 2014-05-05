@@ -24,8 +24,7 @@ in the lib/ directory:
 
     perldoc ExonFrames.pm
 
-INSTALLATION (optional)
------------------------
+### INSTALLATION (optional)
 
 You can install this module by typing the following:
 
@@ -37,8 +36,7 @@ You can install this module by typing the following:
 Or you can just download the files and run them from the unzipped
 folder.
 
-DEPENDENCIES
-------------
+### DEPENDENCIES
 
 This module does not require any non-core modules, but the included
 frames.pl client does. They are these:
