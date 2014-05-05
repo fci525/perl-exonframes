@@ -33,7 +33,7 @@ the unzipped folder.
 
 ### USAGE (of `frames.pl`)
 
-    perl frames.pl [-d DIR] file1 file2 [file3 ...]
+    perl frames.pl [ -d DIR ] file1 file2 [ file3 ... ]
 
 #### OPTIONS
 

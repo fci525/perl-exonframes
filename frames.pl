@@ -190,7 +190,7 @@ Usage of frames.pl:
 
 =head1 SYNOPSIS
 
-perl frames.pl [-d DIR] file1 file2 [file3 ...]
+perl frames.pl [ -d DIR ] file1 file2 [ file3 ... ]
 
 =head2 Options:
 
