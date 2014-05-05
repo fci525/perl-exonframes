@@ -29,10 +29,10 @@ INSTALLATION (optional)
 
 You can install this module by typing the following:
 
-   perl Makefile.PL
-   make
-   make test
-   make install
+    perl Makefile.PL
+    make
+    make test
+    make install
 
 Or you can just download the files and run them from the unzipped
 folder.
