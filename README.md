@@ -24,7 +24,7 @@ in the `lib/` directory:
 
     perldoc ExonFrames.pm
 
-### INSTALLATION (optional)
+### INSTALLATION
 
 For now don't try to install this as a perl module. You can just download
 the files using the `Download ZIP` button on the right and run them from
