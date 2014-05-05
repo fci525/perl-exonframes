@@ -102,7 +102,7 @@ frames.pl client does. They are these:
 
 ### COPYRIGHT AND LICENCE
 
-Copyright (C) 2014 by Andrew Trivette - adt.pseudologic@gmail.com
+Copyright (C) 2014 by Andrew Trivette - adt dot pseudologic at gmail dot com
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.18.2 or,
