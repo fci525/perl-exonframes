@@ -66,9 +66,7 @@ The `DIR` value supplied to the `-d` option will be the name of the folder where
 
 ##### CLUSTAL
 
-`frames.pl` will send the genes you supplied to Clustal Omega at:
-
-    https://www.ebi.ac.uk/Tools/msa/clustalo/
+`frames.pl` will send the genes you supplied to Clustal Omega at https://www.ebi.ac.uk/Tools/msa/clustalo/.
 
 This will produce a number of files, including (assuming the `-d` option was not given and all files are prefixed with "aln"):
 
@@ -79,16 +77,14 @@ This will produce a number of files, including (assuming the `-d` option was not
 
 ##### BOXSHADE
 
-Next, `frames.pl` will send `aln.aln-clustal.clustal` to BOXSHADE at:
-
-    http://www.ch.embnet.org/software/BOX_form.html
+Next, `frames.pl` will send `aln.aln-clustal.clustal` to BOXSHADE at http://www.ch.embnet.org/software/BOX_form.html.
 
 This will produce two new files:
 
     aln_boxshade.rtf                <- the alignment boxshaded
     aln_boxxshade_frames.rtf        <- the BOXSHADE version with frame markers
 
-There will be several additional files produced by Clustal Omega and `frames.pl` which may be of some interest, but are not the focus of this documentation. Feel free to browse them.
+There will be several additional files produced by Clustal Omega and `frames.pl` which may be of some interest, but are not the focus of this documentation. Feel free to browse the examples in the `TEST/` directory.
 
 ### DEPENDENCIES
 
