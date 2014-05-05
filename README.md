@@ -13,26 +13,26 @@ used as input files for frames.pl.
 The files in the TEST/ directory are an example of the output you
 would get from frames.pl by running
 
-    `perl frames.pl -d test exons/*`
+    perl frames.pl -d test exons/*
 
 For more usage information, try:
 
-    `perl frames.pl --help`
+    perl frames.pl --help
 
 You can also try running perldoc on the ExonFrames.pm file found
 in the lib/ directory:
 
-    `perldoc ExonFrames.pm`
+    perldoc ExonFrames.pm
 
 INSTALLATION (optional)
 -----------------------
 
-You can install this module type the following:
+You can install this module by typing the following:
 
-   perl Makefile.PL
-   make
-   make test
-   make install
+    perl Makefile.PL
+    make
+    make test
+    make install
 
 Or you can just download the files and run them from the unzipped
 folder.
