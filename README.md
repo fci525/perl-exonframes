@@ -33,8 +33,8 @@ You can install this module by typing the following:
     make test
     make install
 
-Or you can just download the files and run them from the unzipped
-folder.
+Or you can just download the files using the `Download ZIP` button
+on the right and run them from the unzipped folder.
 
 ### DEPENDENCIES
 
