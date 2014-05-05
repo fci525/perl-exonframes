@@ -90,7 +90,7 @@ sub exon_split {
 
     push( @exons, $cur_exon );
 
-    if ( $invalid ) {
+    if ($invalid) {
         print "WARNING: invalid characters in exon sequence were removed\n";
     }
 
