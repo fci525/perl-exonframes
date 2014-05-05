@@ -36,7 +36,7 @@ You can install this module by typing the following:
 Or you can just download the files using the `Download ZIP` button
 on the right and run them from the unzipped folder.
 
-### USAGE
+### USAGE (of `frames.pl`)
 
     perl frames.pl [-d DIR] file1 file2 [file3 ...]
 
