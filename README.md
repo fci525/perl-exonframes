@@ -94,7 +94,7 @@ frames.pl client does. They are these:
     SOAP::Lite
     WWW::Mechanize
 
-COPYRIGHT AND LICENCE
+### COPYRIGHT AND LICENCE
 
 Copyright (C) 2014 by Andrew Trivette - adt.pseudologic@gmail.com
 
