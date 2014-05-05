@@ -1,0 +1,574 @@
+CLUSTAL O(1.2.1) multiple sequence alignment
+
+
+ANPEP        ------------------------------------------------------------	0
+                                                                         
+APO          ---------------------------MDIQL--------------DPARD---------	10
+                                        ^                                
+APQ          ------------------------------------------------------------	0
+                                                                         
+ENPEP        ------------------------------------------------------------	0
+                                                                         
+ERAP1        ------------------------------------------------------------	0
+                                                                         
+ERAP2        ------------------------------------------------------------	0
+                                                                         
+LNPEP        MEPFTNDRLQLPRNMIENSMFEEEPDVVDLAKEPCLHPLEPDEVEYEPRGSRLLVRGLGE	60
+             ^     <                                                     
+LTA4H        ------------------------------------------------------------	0
+                                                                         
+NPEPPS       ------------------------------------------------------------	0
+                                                                         
+RNPEP        ------------------------------------------------------------	0
+                                                                         
+RNPEPL1      ------------------------------------------------------------	0
+                                                                         
+TRHDE        ------------------------------------------------------------	0
+                                                                         
+                                                                         
+
+ANPEP        --------------------------------------MAK-GFYISKSLGILGILLGVA	21
+                                                   ^                     
+APO          -----------------DLPLMANT----------------SHILVKHYVLDLDVDFE-S	36
+                                                                         
+APQ          ---------------------------M-------GPPSSS-GFYVSRAVALLLAGLVAA	25
+                                        ^                                
+ENPEP        ------------------MNFAERE------------GSKRYCIQTKH-VAILCAVVVGV	29
+                               ^                                         
+ERAP1        ---------------------------MV--------------FLPLKWSL-ATMSFLLS	18
+                                        ^                                
+ERAP2        ---------------------MFHSSAMVNSHR--------KPMFNIHRGF-YCLTAILP	30
+                                  ^                                      
+LNPEP        HEMEEDEEDYESSAKLLGMSFMNRSSGLRNSATGYRQSPDGACSVPSARTMVVCAFVIVV	120
+                                                                         
+LTA4H        ------------------------------------------------------------	0
+                                                                         
+NPEPPS       -----------------------------------------------MWLA---------	4
+                                                            ^            
+RNPEP        ------------------------------------------------------------	0
+                                                                         
+RNPEPL1      ------------------------------------------------------------	0
+                                                                         
+TRHDE        --MGEDDAALRAGSRGLSDPWA-DSVGV-------RPRTTERHIAVHKRLVL-AFAVSLV	49
+               ^                                                         
+                                                                         
+
+ANPEP        AVCTI----IALS------------------VVYSQEK---------------NKNANSS	44
+                                                                         
+APO          QVIEGTI-VLFLEDGNRFKKQNSSIEEACQSESNKACKFGMPE--------------PCH	81
+                                                                         
+APQ          LLLAL----AVLA------------------ALYGHCERVPPSE----LPGLRDLEAESS	59
+                                                                         
+ENPEP        GLIVGLA--VGLT---------------------RSCDSSGDG-------GPGTAPAPSH	59
+                                                                         
+ERAP1        SLLA-L------------------------------LT---VS-------TPSWCQ----	33
+                                                                         
+ERAP2        QICI-C------------------------------SQFSVPS-------SYHFTE----	48
+                                                                         
+LNPEP        AVSVIMV--IYLL---------------------PRCTFTKEG-------CHKKNQ----	146
+                                                                         
+LTA4H        ------------------------------------------------------------	0
+                                                                         
+NPEPPS       ----AAA--PSLA---------------------RRLLFLGPP-------PPPLLL----	26
+                                                                         
+RNPEP        ----------------------------------MASGEHSPG-S--GAARRPLH-----	18
+                                               ^                         
+RNPEPL1      --MAA-----------------------------QCCCRQAPG-AEAAPVRPPPE-----	23
+               ^                                                         
+TRHDE        ALLAVTMLAVLLS------------------LRFDECGASATPGADGGPSGFPERGGNGS	91
+                                                                         
+                                                                         
+
+ANPEP        PVAS--------------------------------TTPSASA-------TTNPASATTL	65
+                                                                         
+APO          IPVTNARTFSSEMEYNDFAICSKGEKDTSDKDGNHDNQEHASGISSSK-----YCCDTGN	136
+                                                                         
+APQ          PPLR--------------------------------QKPTPTPKPSSARELAVTTTPSNW	87
+                                                                         
+ENPEP        LPSS---------------------------------TASPSGPPAQDQDI----CPASE	82
+                                                                         
+ERAP1        -----------------------------------------------STEA---SPKRSD	43
+                                                                         
+ERAP2        -----------------------------------------------DPGA---FPVATN	58
+                                                                         
+LNPEP        ----------------------------------------------SIGLI---QPFATN	157
+                                                                         
+LTA4H        ------------------------------------------MPEIVDT-----CSLA--	11
+                                                       ^                 
+NPEPPS       -LVF---------------------------------SRSS------RRRL---HSLGLA	43
+                                                                         
+RNPEP        ------------------------------------------SAQAVDV------ASA--	28
+                                                                         
+RNPEPL1      ------------------------------------------PPPALDV------ASA--	33
+                                                                         
+TRHDE        LPGSARRN---------------------HHAGGDSWQPEAGGVASPGTTSAQPPSEEER	130
+                                                                         
+                                                                         
+
+ANPEP        DQSKAWNR----YRLPNTLKPDSYRVTLRPYLTPND--RGLYVFKGSSTVRFTCKEAT--	117
+                                                                         
+APO          HGSEDFLLVLDCCDL-SVLKVEEVDVAAVP---------GLEKFTRSPELTVVSEEFR--	184
+                                                                         
+APQ          RPPGPWDQ----LRLPPWLVPLHYDLELWPQLRPDELPAGSLPFTGRVNITVRCTVAT--	141
+                                                                         
+ENPEP        DESGQWKN----FRLPDFVNPVHYDLHVKPLLE-------EDTYTGTVSISINLSAPT--	129
+                                                                         
+ERAP1        GTPFPWNK----IRLPEYVIPVHYDLLIHANLT-------TLTFWGTTKVEITASQPT--	90
+                                                                         
+ERAP2        GERFPWQE----LRLPSVVIPLHYDLFVHPNLT-------SLDFVASEKIEVLVSNAT--	105
+                                                                         
+LNPEP        GKLFPWAQ----IRLPTAVVPLRYELSLHPNLT-------SMTFRGSVTISVQALQVT--	204
+                                                                         
+LTA4H        ---SPASV----C------RTKHLHLRCSVDFT-------RRTLTGTAALTVQSQEDN-L	50
+                                                                         
+NPEPPS       AMPEKRPF----ERLPADVSPINYSLCLKPDLL-------DFTFEGKLEAAAQVRQAT--	90
+                                                                  ^      
+RNPEP        ---SNFRA----F------ELLHLHLDLRAEFGPPGPGAGSRGLSGTAVLDLRCLEPEGA	75
+                                                                         
+RNPEPL1      ---SSAQL----F------RLRHLQLGLELR-------PEARELAGCLVLELCALRPA-P	72
+                                                                         
+TRHDE        EPWEPWTQ----LRLSGHLKPLHYNLMLTAFME-------NFTFSGEVNVEIACRNAT--	177
+                                                                         
+                                      :                                  
+
+ANPEP        DVIIIHSK--------KLNYTLSQGHRVV------LRGVGGSQ------------PPDID	151
+                                                                         
+APO          NQIVRELV----------TLPANRWREQLDYYARC-------------------SQAPGC	215
+                                                                         
+APQ          SRLLLHSL--------FQDCERAEVRGPL------SPGTGNATV----------GRVPVD	177
+                                                                         
+ENPEP        RYLWLHLR--------ETRITRLPEL----------KRPSG-------------DQVQVR	158
+                                                                         
+ERAP1        STIILHSH--------HLQISRATLR----------KGAGERLS------------EEPL	120
+                                                                         
+ERAP2        QFIILHSK--------DLEITNATLQ----------SEEDSRYM----------KPGKEL	137
+                                                                         
+LNPEP        WNIILHST--------GHNISRVTFM----------SAVS--------------SQEKQA	232
+                                                                         
+LTA4H        RSLVLDTKDL--------TIEKVVINGQEVKYAL--------------------------	76
+                ^                                                        
+NPEPPS       NQIVMNCA--------DIDIITASYA----------PEGDEE---------------IHA	117
+                                                      <                  
+RNPEP        AELRLDSHPCLEVTAAALRRERP----------------G--------------SEEPPA	105
+                                                                         
+RNPEPL1      RALVLDAHPALRLHSAAFRRAPAAAAETPCAFAFSAPGPGPAPPPPLPAFPEAPGSEPAC	132
+                                                                         
+TRHDE        RYVVLHAS--------RVAVEKVQLA-------------EDRAF----------GAVPVA	206
+                                                                         
+               :  .                                                      
+
+ANPEP        -K----TELVEP-TEYLVVHLKGSLVKD---SQYEMDSEFEGELADDL-AGFYRSEYMEG	201
+                                                                         
+APO          GE-----LLFDTDTWSLQIRKTG--AQTATDFPHAIRIWYKTKPEG---RSVTWT----S	261
+                                                                         
+APQ          -D----VWFALD-TEYMVLELSEPLKPG---SSYELQLSFSGLVKEDLREGLFLNVYTDQ	228
+                                                                         
+ENPEP        -R----CFEYKK-QEYVVVEAEEELTPSSGDGLYLLTMEFAGWLNGSL-VGFYRTTYTEN	211
+                                                                         
+ERAP1        -Q----VLEHPR-QEQIALLAPEPLLVG---LPYTVVIHYAGNLSETF-HGFYKSTYRTK	170
+                                                                         
+ERAP2        -K----VLSYPA-HEQIALLVPEKLTPH---LKYYVAMDFQAKLGDGF-EGFYKSTYRTL	187
+                                                                         
+LNPEP        -E----ILEYAY-HGQIAIVAPEALLAG---HNYTLKIEYSANISSSY-YGFYGFSYTDE	282
+                                                                         
+LTA4H        ------GERQSYKGSPMEISLPIALSKN---QEIVIEISFETSPKS---SALQWLTPEQT	124
+                                       >                                 
+NPEPPS       -T----GFNYQNEDEKVTLSFPSTLQTG----TGTLKIDFVGELNDKM-KGFYRSKYTTP	167
+                                        <                                
+RNPEP        EPVSFYTQPFSHYGQALCVSFPQPCRAA---ERLQVLLTY-RVGEG---PGVCWLAPEQT	158
+                                                                ^        
+RNPEPL1      CPLAFRVDPFTDYGSSLTVTLPPELQAH---QPFQVILRY-TSTDA---PAIWWLDPELT	185
+                                                                ^        
+TRHDE        -G----FFLYPQ-TQVLVVVLNRTLDAQ---RNYNLKIIYNALIENEL-LGFFRSSYVLH	256
+                                                                         
+                             : :                :   :          ..        
+
+ANPEP        N-VRKVVATTQMQAADARKSFPCFDEPAMKAEFNITLIHPKDLTALSNMLPKGPSTP-LP	259
+                 >                                               <       
+APO          DQSGRPCVYTVGSPINNRALFPCQEPPVAMSTWQATVRAAASFVVLMSGENSAK---PTQ	318
+                 >                                                       
+APQ          G-ERRALLASQLEPTFARYVFPCFDEPALKATFNITMIHHPSYVALSNMPKLGQSEKEDV	287
+                 >                                               <       
+ENPEP        G-QVKSIVATDHEPTDARKSFPCFDEPNKKATYTISITHPKEYGALSNMPVAKE----ES	266
+                 >                                               ^       
+ERAP1        EGELRILASTQFEPTAARMAFPCFDEPAFKASFSIKIRREPRHLAISNMPLVKS----VT	226
+                 >                                              ^        
+ERAP2        GGETRILAVTDFEPTQARMAFPCFDEPLFKANFSIKIRRESRHIALSNMPKVKT----IE	243
+                 >                                              ^        
+LNPEP        SNEKKYFAATQFEPLAARSAFPCFDEPAFKATFIIKIIRDEQYTALSNMPKKSS----VV	338
+                 >                                              ^        
+LTA4H        SGKEHPYLFSQCQAIHCRAILPCQDTPSVKLTYTAEVSVPKELVALMSAI--RDGETPDP	182
+                          ^                      ^                       
+NPEPPS       SGEVRYAAVTQFEATDARRAFPCWDEPAIKATFDISLVVPKDRVALSNMNVIDR--KPYP	225
+                          ^                                   ^          
+RNPEP        AGKKKPFVYTQGQAVLNRAFFPCFDTPAVKYKYSALIEVPDGFTAVMSAS--TWEK-RG-	214
+                                                   ^                     
+RNPEPL1      YGCAKPFVFTQGHSVCNRSFFPCFDTPAVKCTYSAVVKAPSGVQVLMSAT--RSAYMEE-	242
+                                                   ^                     
+TRHDE        G-ERRFLGVTQFSPTHARKAFPCFDEPIYKATFKISIKHQATYLSLSNMPVET----SVF	311
+                 >                                                       
+                 :    :       *  :** : *     :   :        : .            
+
+ANPEP        EDPNWNVTEFHTTPKMSTYLLAFIVSEFDYVEKQASNGVLIRIWARPSAIAAGHGDYALN	319
+                                                     ^                   
+APO          LWEECSSWYYYVTMPMPASTFTIAVGCWTEM--------KMETWSSNDLA----------	360
+                <                                                        
+APQ          NGSKWTVTTFSTTPHMPTYLVAFVICDYDHVNRT-ERGKEIRIWARKDAIANGSADFALN	346
+                                                     ^                   
+ENPEP        VDDKWTRTTFEKSVPMSTYLVCFAVHQFDSVKRISNSGKPLTIYVQPEQK--HTAEYAAN	324
+                                                     ^                   
+ERAP1        VAEGLIEDHFDVTVKMSTYLVAFIISDFESVSKITKSGVKVSVYAVPDKI--NQADYALD	284
+                                                     ^                   
+ERAP2        LEGGLLEDHFETTVKMSTYLVAYIVCDFHSLSGFTSSGVKVSIYASPDKR--NQTHYALQ	301
+                                                     ^                   
+LNPEP        LDDGLVQDEFSESVKMSTYLVAFIVGEMKNLSQD-VNGTLVSIYAVPEKI--GQVHYALE	395
+                                                     ^                   
+LTA4H        EDPSRKIYKFIQKVPIPCYLIALVVGALESR----QIGPRTLVWSEKEQV--EKSAYEFS	236
+                          ^                >                             
+NPEPPS       DDENLVEVKFARTPVMSTYLVAFVVGEYDFVETRSKDGVCVRVYTPVGKA--EQGKFALE	283
+                                                                         
+RNPEP        ----PNKFFFQMCQPIPSYLIALAIGDLVSA----EVGPRSRVWAEPCLI--DAAKEEYN	264
+                                                    >                    
+RNPEPL1      ----EGVFHFHMEHPVPAYLVALVAGDLKPA----DIGPRSRVWAEPCLL--PTATSKLS	292
+                                                    >                    
+TRHDE        EEDGWVTDHFSQTPLMSTYYLAWAICNFTYRETTTKSGVVVRLYARPDAIRRGSGDYALH	371
+                                                     ^                   
+                      :     :    .                      :                
+
+ANPEP        V-TGPILNFFAGHYD-------TPYPLPKSDQIGL--PDFNAGAMENWGLVTYRENSLLF	369
+                                           <                             
+APO          --TERPFSPSEANFRHVGVCSHMEYPCRFQNASATTQEIIPHRVFAPVCLTGACQETLLR	418
+                           >                                             
+APQ          I-TGPIFSFLEDLFN-------ISYSLPKTDIIAL--PSFDNHAMENWGLMIFDESGLLL	396
+                                           <                             
+ENPEP        I-TKSVFDYFEEYFA-------MNYSLPKLDKIAI--PDFGTGAMENWGLITYRETNLLY	374
+                                           <                             
+ERAP1        A-AVTLLEFYEDYFS-------IPYPLPKQDLAAI--PDFQSGAMENWGLTTYRESALLF	334
+                                           <                             
+ERAP2        A-SLKLLDFYEKYFD-------IYYPLSKLDLIAI--PDFAPGAMENWGLITYRETSLLF	351
+                                           <                             
+LNPEP        T-TVKLLEFFQNYFE-------IQYPLKKLDLVAI--PDFEAGAMENWGLLTFREETLLY	445
+                                           <                             
+LTA4H        E-TESMLKIAEDLG--------GPYVWGQYDLLVLP-PSFPYGGMENPCLT-FVTPTLLA	285
+               ^                                                        ^
+NPEPPS       V-AAKTLPFYKDYFN-------VPYPLPKIDLIAI--ADFAAGAMENWGLVTYRETALLI	333
+             ^                                         <          >      
+RNPEP        GVIEEFLATGEKLF--------GPYVWGRYDLLFMP-PSFPFGGMENPCLT-FVTPCLLA	314
+                                         >                               
+RNPEPL1      GAVEQWLSAAERLY--------GPYMWGRYDIVFLP-PSFPIVAMENPCLT-FIISSILE	342
+                                         >                               
+TRHDE        I-TKRLIEFYEDYFK-------VPYSLPKLDLLAV--PKHPYAAMENWGLSIFVEQRILL	421
+                                           <                             
+                   :                 *     :             :    *       :* 
+
+ANPEP        DPLSSSSSNKERVVTVIA--HELAHQWFGNLVTIEWWNDLWLNEGFASYVEYLGADYAEP	427
+                                       ^                                 
+APO          ---------------LIPPCLSAAHSVLGAH--------------PFSRLDVLIVPANFP	449
+                                                                         
+APQ          EPKDQLTEKKTLISYVVS--HEIGHQWFGNLVTMNWWNNIWLNEGFASYFEFEVINYFNP	454
+                                       ^                                 
+ENPEP        DPKESASSNQQRVATVVA--HELVHQWFGNIVTMDWWEDLWLNEGFASFFEFLGVNHAET	432
+                                       ^                                 
+ERAP1        DAEKSSASSKLGITMTVA--HELAHQWFGNLVTMEWWNDLWLNEGFAKFMEFVSVSVTHP	392
+                                       ^                                 
+ERAP2        DPKTSSASDKLWVTRVIA--HELAHQWFGNLVTMEWWNDIWLKEGFAKYMELIAVNATYP	409
+                                       ^                                 
+LNPEP        DSNTSSMADRKLVTKIIA--HELAHQWFGNLVTMKWWNDLWLNEGFATFMEYFSLEKIFK	503
+                                       ^                                 
+LTA4H        --------GDKSLSNVIA--HEISHSWTGNLVTNKTWDHFWLNEGHTVYLERHICGRLFG	335
+                            ^                        >                   
+NPEPPS       DPKNSCSSSRQWVALVVG--HELAHQWFGNLVTMEWWTHLWLNEGFASWIEYLCVDHCFP	391
+                                               ^                         
+RNPEP        --------GDRSLADVII--HEISHSWFGNLVTNANWGEFWLNEGFTMYAQRRISTILFG	364
+                                                                        <
+RNPEPL1      --------SDEFLVIDVI--HEVAHSWFGNAVTNATWEEMWLSEGLATYAQRRITTETYG	392
+                                                                        <
+TRHDE        DPSVSSISYLLDVTMVIV--HEICHQWFGDLVTPVWWEDVWLKEGFAHYFEFVGTDYLYP	479
+                                       ^                                 
+                             :    .  *.  *                     :         
+
+ANPEP        T-WNLKDL-MVLNDVYRVMAVDALASSHPLSTPASEINTPAQISELFDAISYSKGASVLR	485
+                  ^                                                ^     
+APO          S-LGMARP-----------SKDKTG--HTSDSGASVIKHGLNPEKIFMQVHYLKGYFLLR	495
+                   >                                               ^     
+APQ          K-LPRNEI-FFSNILHNILREDHALVTRAVA-MKVENFKTSEIQELFDIFTYSKGASMAR	511
+                  ^                                                ^     
+ENPEP        D-WQMRDQ-MLLEDVLPVQEDDSLMSSHPII---VTVTTPDEITSVFDGISYSKGSSILR	487
+                  ^                                                ^     
+ERAP1        E-LKVGDY--FFGKCFDAMEVDALNSSHPVS---TPVENPAQIREMFDDVSYDKGACILN	446
+                  ^                                                ^     
+ERAP2        E-LQFDDY--FLNVCFEVITKDSLNSSRPIS---KPAETPTQIQEMFDEVSYNKGACILN	463
+                  ^                                                ^     
+LNPEP        E-LSSYED--FLDARFKTMKKDSLNSSHPIS---SSVQSSEQIEEMFDSLSYFKGSSLLL	557
+                  ^                                                ^     
+LTA4H        EKFRHFNALGGWGELQN--SVKTFGETHPFTKLVVDLT-DIDPDVAYSSVPYEKGFALLF	392
+                                 ^                                       
+NPEPPS       E-YDIWTQ-FVSADYTRAQELDALDNSHPIE---VSVGHPSEVDEIFDAISYSKGASVIR	446
+                                               ^                         
+RNPEP        AAYTCLEAATGRALLRQ--HMDITGEENPLNKLRVKIEPGVDPDDTYNETPYEKGFCFVS	422
+                                                    <                    
+RNPEPL1      AAFTCLETAFRLDALHR--QMKLLGEDSPVSKLQVKLEPGVNPSHLMNLFTYEKGYCFVY	450
+                                                    <                    
+TRHDE        G-WNMEKQRFLTDVLHEVMLLDGLASSHPVS---QEVLQATDIDRVFDWIAYKKGAALIR	535
+                  ^                                                ^     
+                                  .                   :         * **  .  
+
+ANPEP        MLSSFLSE-DVFKQGLASYLHTFAYQNTIYLNLWDHLQEAVNNR-S--------------	529
+                              ^                     ^                    
+APO          FLAKRLGD-ETYFSFLRKFVHTFHGQLILSQDFLQMLLENIPEEKR--------------	540
+                                            ^             >              
+APQ          MLSCFLNE-HLFVSALKSYLKTFSYSNAEQDDLWRHFQMAIDDQST--------------	556
+                              ^                     ^                    
+ENPEP        MLEDWIKP-ENFQKGCQMYLEKYQFKNAKTSDFWAALEEAS-------------------	527
+                              ^                     ^                    
+ERAP1        MLREYLSA-DAFKSGIVQYLQKHSYKNTKNEDLWDSMASICPTDGVKGMDGFCSR-SQHS	504
+                                                    ^                    
+ERAP2        MLKDFLGE-EKFQKGIIQYLKKFSYRNAKNDDLWSSLSNSCLESDFTS-GGVCHSDPKMT	521
+                                                    ^                    
+LNPEP        MLKTYLSE-DVFQHAVVLYLHNHSYASIQSDDLWDSFNEVT-------------------	597
+                                                    ^                    
+LTA4H        YLEQLLGGPEIFLGFLKAYVEKFSYKSITTDDWKDFLYSYFK----DKV-----------	437
+                      <                                      ^           
+NPEPPS       MLHDYIGD-KDFKKGMNMYLTKFQQKNAATEDLWESLENAS-------------------	486
+                       ^                   <                             
+RNPEP        YLAHLVGDQDQFDSFLKAYVHEFKFRSILADDFLDFYLEYFPELKKKRV-----------	471
+                              ^                                          
+RNPEPL1      YLSQLCGDPQRFDDFLRAYVEKYKFTSVVAQDLLDSFLSFFPELKEQSV-----------	499
+                              ^                                          
+TRHDE        MLANFMGH-SVFQRGLQDYLTIHKYGNAARNDLWNTLSEALKRNGK--------------	580
+                              ^                     ^                    
+              *         :      ::  .        :                            
+
+ANPEP        ------IQLPTTVRDIMNRWTLQMGFPVITVDTSTG------TLSQEHFLLDPDSNV--T	575
+                                                                         
+APO          --------LELSVENIYQDWLESSGIPKPLQRERRAGAECGLARQ---------------	577
+                                         ^                               
+APQ          ------VILPATIKNIMDSWTHQSGFPVITLNVSTG------VMKQEPFYLENIKNR--T	602
+                                                                         
+ENPEP        ---------RLPVKEVMDTWTRQMGYPVLNVNGV-------KNITQKRFLLDPR-ANPSQ	570
+                                                                         
+ERAP1        SSSSHWHQEGVDVKTMMNTWTLQKGFPLITITVR----GRNVHMKQEHYMKGSDG-----	555
+                 ^                                                       
+ERAP2        SNMLAFLGENAEVKEMMTTWTLQKGIPLLVVKQD----GCSLRLQQERFLQGVFQEDPEW	577
+                ^                                                        
+LNPEP        -------NQTLDVKRMMKTWTLQKGFPLVTVQKK----GKELFIQQERFFLNM---KPEI	643
+                                                                         
+LTA4H        ---------DVLNQVDWNAWLYSPGLPPIKPNYDM--T---LTNA---------------	468
+                                            >                            
+NPEPPS       ---------GKPIAAVMNTWTKQMGFPLIYVEAEQVEDDRLLRLSQKKFCAGGSY-----	532
+                                                ^                        
+RNPEP        ---------DIIPGFEFDRWLNTPGWPPYLPDLSPGDS---LMKP---------------	504
+                          <                                              
+RNPEPL1      ---------DCRAGLEFERWLNATGPPLAEPDLSQGSS---LTRP---------------	532
+                          <                                              
+TRHDE        ---------YVNIQEVMDQWTLQMGYPVITILGNTTAE-NRIIITQQHFIYDISAKTKAL	630
+                                                                         
+                                *    * *                                 
+
+ANPEP        RPSEFNYVWIVPITSIRDGRQ----QQDYWLIDVRAQ--NDLFSTSGNEWVLLNLNVTGY	629
+                  >                             <                        
+APO          -VRAEVTKWIG------VNRRPR--------KRKRREKEEV--------FEKLLPDQLVL	614
+                  ^                                              ^       
+APQ          L-LTSNDTWIVPILWIKNGTT----QPLVWLDQSSKVFPEMQVSDSDHDWVILNLNMTGY	657
+                  >                             <                        
+ENPEP        PPSDLGYTWNIPVKWTEDNITSS-VLFNRSEK---EGITLNSSNPSGNAFLKINPDHIGF	626
+                  >                              <                       
+ERAP1        -APDTGYLWHVPLTFITSKSDMV----HRFLL---KTKTDVLILPEEVEWIKFNVGMNGY	607
+                  >                                 <                    
+ERAP2        RALQERYLWHIPLTYSTSSSNVI----HRHIL---KSKTDTLDLPEKTSWVKFNVDSNGY	630
+                  >                                 <                    
+LNPEP        QPSDTSYLWHIPLSYVTEGRNYS-KYQSVSLL---DKKSGVINLTEEVLWVKVNINMNGY	699
+                  >                                 <                    
+LTA4H        -CIALSQRWIT------AKEDDL----------------NSFNATDLKDLSSHQL---NE	502
+                              ^                                          
+NPEPPS       -VGEDCPQWMVPITISTSEDPNQAKLKILMDK---PEMNVVLKNVKPDQWVKLNLGTVGF	588
+               <                                                 ^       
+RNPEP        -AEELAQLWAA------EELDMK---------------AI--EAVAISPWKTYQL---VY	537
+                                                                         
+RNPEPL1      -VEALFQLWTA------EPLDQA---------------AASASAIDISKWRTFQT---AL	567
+                                                                         
+TRHDE        KLQNNSYLWQIPLTIVVGNRSHVSSEAIIWVSNKSEH--HRITYLDKGSWLLGNINQTGY	688
+                  >                             <                        
+                     *                                                   
+
+ANPEP        YRVNYDEENWRKIQTQLQRDHSAIPVINRAQIINDAFNLASAHKVPVT------------	677
+                                   ^                 >                   
+APO          -----------LLEHLLEQKTLSPRTLQSLQRTY--HLQDQDAEVRHRWCELIVKHKFTK	661
+                                                         ^               
+APQ          YRVNYDKLGWKKLNQQLEKDPKAIPVIHRLQLIDDAFSLSKNNYIEIE------------	705
+                                   ^                 >                   
+ENPEP        YRVNYEVATWDSIATALSLNHKTFSSADRASLIDDAFALARAQLLDYK------------	674
+                                   ^                 >                   
+ERAP1        YIVHYEDDGWDSLTGLLKGTHTAVSSNDRASLINNAFQLVSIGKLSIE------------	655
+                                                     >                   
+ERAP2        YIVHYEGHGWDQLITQLNQNHTLLRPKDRVGLIHDVFQLVGAGRLTLD------------	678
+                                                     >                   
+LNPEP        YIVHYADDDWEALIHQLKINPYVLSDKDRANLINNIFELAGLGKVPLK------------	747
+                                                     >                   
+LTA4H        -----------FLAQTLQRAPLPLGHIKRMQEVYN-FNAINNSEIRFRWLRLCIQSKWED	550
+                                ^                           >            
+NPEPPS       YRTQYSSAMLESLLPGI--RDLSLPPVDRLGLQNDLFSLARAGIISTV------------	634
+                                                    ^                    
+RNPEP        -----------FLDKILQKSPLPPGNVKKLGDTYPSISNARNAELRLRWGQIVLKNDHQE	586
+                                     <                                   
+RNPEPL1      -----------FLDRLLDGSPLPQEVVMSLSKCYSSLLDSMNAEIRIRWLQIVVRNDYYP	616
+                                     <                                   
+TRHDE        FRVNYDLRNWRLLIDQLIRNHEVLSVSNRAGLIDDAFSLARAGYLPQN------------	736
+                                   ^                 >                   
+                         :   :                           :               
+
+ANPEP        ---LALNNTLFLIEERQYMPWEAALSSLSYFKLMF---D----RSEVYGPMKNYLKKQVT	727
+                                                                 ^       
+APO          AYKSVERFLQEDQAMGVYL-YGELMVSEDARQQQLARRCFERTKEQMDRSSAQVVAEMLF	720
+                          ^                                              
+APQ          ---TALELTKYLAEEDEIIVWHTVLVNLVTRDLVSE-VN----IYDIYSLLKRYLLKRLN	757
+                                                                 ^       
+ENPEP        ---VALNLTKYLKREENFLPWQRVISAVTYIISMFED------DKELYPMIEEYFQGQVK	725
+                                                                 ^       
+ERAP1        ---KALDLSLYLKHETEIMPVFQGLNELIPMYKLMEKRD----MNEVETQFKAFLIRLLR	708
+                                                                 ^       
+ERAP2        ---KALDMTYYLQHETSSPALLEGLSYLESFYHMMDRRN----ISDISENLKRYLLQYFK	731
+                                                                 ^       
+LNPEP        ---RAFDLINYLGNENHTAPITEALFQTDLIYNLLEKLG----YMDLASRLVTRVFKLLQ	800
+                                                                 ^       
+LTA4H        AIPLALKMATEQGRMKFTRPLFKDLAAFDKS-HDQAVRTYQEHKASMHPVTAMLVGKDLK	609
+                                   >                                     
+NPEPPS       ---EVLKVMEAFVNEPNYTVWSDLSCNLGILSTLLS-------HTDFYEEIQEFVKDVFS	684
+                                                                         
+RNPEP        DFWKVKEFLHNQGKQKYTLPLYHAMMGGSEVAQTLAKETFASTASQLHSNVVNYVQQIVA	646
+                         ^                                               
+RNPEPL1      DLHRVRRFLESQMSRMYTIPLYEDLCTGALK--SFALEVFYQTQGRLHPNLRRAIQQILS	674
+                         ^                                               
+TRHDE        ---IPLEIIRYLSEEKDFLPWHAASRALYPLDKLL---D----RMENYNIFNEYILKQVA	786
+                                                                 ^       
+                                                                   .   . 
+
+ANPEP        PLFIHFRNNT-N-NWREIPENLMDQYSEVNAISTACSNGVPECEEMVSGLFKQWMENPNN	785
+                                     >                                   
+APO          ------------------------------------------------------------	720
+                                                                         
+APQ          LIWNIYSTIIRE-NVLALQDDYLALISLEKLFVTACWLGLEDCLQLSKELFAKWVDHPEN	816
+                                     >                                   
+ENPEP        PIADSLGWNDAG--------DHVTKLLRSSVLGFACKMGDREALNNASSLFEQWL--NGT	775
+                                     >                                   
+ERAP1        DLIDKQTWTDEG--------SVSERMLRSQLLLLACVHNYQPCVQRAEGYFRKWKESNGN	760
+                                                                         
+ERAP2        PVIDRQSWSDKG--------SVWDRMLRSALLKLACDLNHAPCIQKAAELFSQWMESSGK	783
+                                                                         
+LNPEP        NQIQQQTWTDEG--------TPSMRELRSALLEFACTHNLGNCSTTAMKLFDDWMASNGT	852
+                                                                         
+LTA4H        VD----------------------------------------------------------	611
+                                                                         
+NPEPPS       PIGERLGWDPKP------GEGHLDALLRGLVLGKLGKAGHKATLEEARRRFKDHV--EGK	736
+                                 <                                       
+RNPEP        PKGS--------------------------------------------------------	650
+                                                                         
+RNPEPL1      QGLGSSTEPASE-PSTELGKAEADTDSDAQALL-----------------LGDEA--PSS	714
+                                                                         
+TRHDE        TTYIKLGWPKNNFNGSLVQASYQHEELRREVIMLACSFGNKHCHQQASTLISDWISSNRN	846
+                                     >                                   
+                                                                         
+
+ANPEP        NPIHPNLRSTVYCNAIAQ-GGEEEWDFAWEQFRNATLVNEADKLRAALACSKELWILNRY	844
+              >                                                        > 
+APO          ------------------------------------------------------------	720
+                                                                         
+APQ          EI-PYPIKDVVLCYGIAL-GSDKEWDILLNTYTNTTNKEEKIQLAYAMSCSKDPWILNRY	874
+             >                                                         > 
+ENPEP        VSLPVNLRLLVYRYGMQNSGNEISWNYTLEQYQKTSLAQEKEKLLYGLASVKNVTLLSRY	835
+              >                                                        > 
+ERAP1        LSLPVDVTLAVFAVGAQS---TEGWDFLYSKYQFSLSSTEKSQIEFALCRTQNKEKLQWL	817
+              >                                                        > 
+ERAP2        LNIPTDVLKIVYSVGAQT---TAGWNYLLEQYELSMSSAEQNKILYALSTSKHQEKLLKL	840
+              >                                                        > 
+LNPEP        QSLPTDVMTTVFKVGAKT---DKGWSFLLGKYISIGSEAEKNKILEALASSEDVRKLYWL	909
+              >                                                        > 
+LTA4H        ------------------------------------------------------------	611
+                                                                         
+NPEPPS       QILSADLRSPVYLTVLKH-GDGTTLDIMLKLHKQADMQEEKNRIERVLGATLLPDLIQKV	795
+                       ^                   ^                             
+RNPEP        ------------------------------------------------------------	650
+                                                                         
+RNPEPL1      ---AISLRDVNVSA----------------------------------------------	725
+                                                                         
+TRHDE        RI-PLNVRDIVYCTGVSL-LDEDVWEFIWMKFHSTTAVSEKKILLEALTCSDDRNLLNRL	904
+             >                                                         > 
+                                                                         
+
+ANPEP        LSYTLNPDLIRKQDATSTIISITNNVIGQGLVWDFVQSNWKKLFNDYGGGSFSFSNLIQA	904
+                                                          >              
+APO          ------------------------------------------------------------	720
+                                                                         
+APQ          MEYAISTSPFTSNE-TNIIEVVASSEVGRYVAKDFLVNNWQAVSKRYGTQS--LINLIYT	931
+                                                          >              
+ENPEP        LDLLKDTNLIKTQDVFTVIRYISYNSYGKNMAWNWIQLNWDYLVNRYTLNNRNLGRIVT-	894
+                                                          >              
+ERAP1        LDESFKGDKIKTQEFPQILTLIGRNPVGYPLAWQFLRKNWNKLVQKFELGSSSIAHMVMG	877
+                                                          >              
+ERAP2        IELGMEGKVIKTQNLAALLHAIARRPKGQQLAWDFVRENWTHLLKKFDLGSYDIRMIISG	900
+                                                          >              
+LNPEP        MKSSLNGDNFRTQKLSFIIRTVGRHFPGHLLAWDFVKENWNKLVQKFPLGSYTIQNIVAG	969
+                                                          >              
+LTA4H        ------------------------------------------------------------	611
+                                                                         
+NPEPPS       LTFALSEEVRPQDTVSVIGGVAGGSKHGRKAAWKFIKDNWEELYNRYQGG-FLISRLIKL	854
+                   ^                                                    ^
+RNPEP        ------------------------------------------------------------	650
+                                                                         
+RNPEPL1      ------------------------------------------------------------	725
+                                                                         
+TRHDE        LNLSLNSEVVLDQDAIDVIIHVARNPHGRDLAWKFFRDKWKILNTRYGEALFMNSKLISG	964
+                                                          >              
+                                                                         
+
+ANPEP        VTRRFSTEYELQQLEQFKKDNEETGFGSGTRALEQALEKTKANIKWVKENKEVVLQWFTE	964
+                          ^                                              
+APO          ------------------------------------------------------------	720
+                                                                         
+APQ          IGRTVTTDLQIVELQQFFSNMLEEHQRIRVHANLQTIKNE--NLK-NKKLSARIAAWLRR	988
+                          ^                                              
+ENPEP        IAEPFNTELQLWQMESFFAKYPQAG--AGEKPREQVLETVKNNIEWLKQHRNTIREWFFN	952
+                          ^                                              
+ERAP1        TTNQFSTRTRLEEVKGFFSSLKENG--SQLRCVQQTIETIEENIGWMDKNFDKIRVWLQS	935
+                          ^                                              
+ERAP2        TTAHFSSKDKLQEVKLFFESLEAQG--SHLDIFQTVLETITKNIKWLEKNLPTLRTWLMV	958
+                          ^                                              
+LNPEP        STYLFSTKTHLSEVQAFFENQSEAT--FRLRCVQEALEVIQLNIQWMEKNLKSLTWWL--	1025
+                          ^                                              
+LTA4H        ------------------------------------------------------------	611
+                                                                         
+NPEPPS       SVEGFAVDKMAGEVKAFFESHPAP---SAERTIQQCCENILLNAAWLKRDAESIHQYLLQ	911
+                            ^                                            
+RNPEP        ------------------------------------------------------------	650
+                                                                         
+RNPEPL1      ------------------------------------------------------------	725
+                                                                         
+TRHDE        VTEFLNTEGELKELKNFMKNYDGVA----AASFSRAVETVEANVRWKMLYQDELFQWLGK	1020
+                          ^                                              
+                                                                         
+
+ANPEP        NSK----------	967
+                          
+APO          -------------	720
+                          
+APQ          NT-----------	990
+                          
+ENPEP        LLESG--------	957
+                          
+ERAP1        EKLEHDPEADATG	948
+                 <        
+ERAP2        NT-----------	960
+                          
+LNPEP        -------------	1025
+                          
+LTA4H        -------------	611
+                          
+NPEPPS       RKASPPTV-----	919
+                          
+RNPEP        -------------	650
+                          
+RNPEPL1      -------------	725
+                          
+TRHDE        ALRH---------	1024
+                          
+                          
