@@ -99,8 +99,8 @@ print "\nEnter an email address for Clustal Omega (you will receive your "
 my $email = <STDIN>;
 $email =~ s/\s//g;
 
-# runs twice because BOXSHADE needs the no numbers version, but people like
-# the version WITH numbers. so get both.
+# runs Clustal twice because BOXSHADE needs the no numbers version, but people
+# like the version WITH numbers. so get both.
 
 print "\n==== RUNNING CLUSTAL ====\n";
 
@@ -288,7 +288,7 @@ directory, and contains further documentation on the functions used.
 
 =head1 AUTHOR
 
-Andrew Trivette, adt.pseudologic@gmail.com
+Andrew Trivette - adt dot pseudologic at gmail dot com
 
 =head1 COPYRIGHT AND LICENSE
 

@@ -595,7 +595,7 @@ As well as the (INCLUDED) Clustal Omega client provided by EMBL-EBI:
 
 =head1 AUTHOR
 
-Andrew Trivette, adt.pseudologic@gmail.com
+Andrew Trivette - adt dot pseudologic at gmail dot com
 
 =head1 COPYRIGHT AND LICENSE
 
