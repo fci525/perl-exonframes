@@ -92,6 +92,8 @@ foreach my $file (@files) {
 # generate a FASTA file of all protein seqs, send it to clustal
 #
 
+print "\n";
+
 my @fasta_output = fasta_format( \@aa_seqs, \@gene_names );
 
 open( my $output, '>', "$aln_path.sequence.txt" )
@@ -102,11 +104,11 @@ close($output);
 my $email;
 
 while ( not $email ) {
-    print "\n\nEnter an email address for Clustal Omega (you will receive your "
+    print "\nEnter an email address for Clustal Omega (you will receive your "
       . "results immediately, but Clustal requires an email address be given): ";
     $email = <STDIN>;
     $email =~ s/\s//g;
-    print "  ERROR: no email given - try again" unless $email;
+    print "  ERROR: no email given - try again\n" unless $email;
 }
 
 # runs Clustal twice because BOXSHADE needs the no numbers version, but people
@@ -203,21 +205,24 @@ open( $output, '>', $aln_path . "_boxshade_frames.rtf" )
 print $output @boxshade_out;
 close($output);
 
-print "===== BOXSHADE DONE =====\n";
+my $clustaln_file = $aln_path . '_frames.txt';
+my $boxshade_file = $aln_path . '_boxshade.rtf';
+my $boxframe_file = $aln_path . '_boxshade_frames.rtf';
 
-print "\nDone!\n\n",
-  "The following are some of the useful files that were produced:\n\n",
-  "1. The numbered Clustal alignment is found in "
-  . "$aln_path.aln-clustal_num.clustal_num\n",
-  "2. The version with frame markers is found in "
-  . "$aln_path"
-  . "_frames.txt\n",
-  "3. A numberless version without markers is found in "
-  . "$aln_path.aln-clustal.clustal\n",
-  "4. The BOXSHADE alignment is found in $aln_path" . "_boxshade.rtf\n",
-  "5. The BOXSHADE alignment with frame markers is foun in "
-  . "$aln_path"
-  . "_boxshade_frames.rtf\n\n";
+print <<"END";
+===== BOXSHADE DONE =====
+
+Done!
+
+The following are some of the useful files that were produced:
+
+1. The numbered Clustal alignment is found in $aln_path.aln-clustal_num.clustal_num
+2. The version with frame markers is found in $clustaln_file
+3. A numberless version without markers is found in $aln_path.aln-clustal.clustal
+4. The BOXSHADE alignment is found in $boxshade_file
+5. The BOXSHADE alignment with frame markers is found in $boxframe_file
+
+END
 
 #-------------------- Pod Documentation --------------------
 

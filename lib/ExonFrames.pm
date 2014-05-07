@@ -28,7 +28,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 our @EXPORT = qw(
 );
 
-our $VERSION = '0.82';
+our $VERSION = '0.83';
 
 #<1>========== Subs and Things ==========
 
@@ -160,7 +160,7 @@ sub frame_line {
             $dna_start -= $offset;
         }
         else {
-            die "ERROR: Exon not found in sequence\n";
+            die "  ERROR: Exon not found in sequence\n";
         }
 
         $aa_start = $dna_start / 3;
@@ -264,7 +264,7 @@ sub clustal_frames {
 
             # get the $line_prefix and $line_wrap values ($line_wrap is
             # acquired every time because the last line is always shorter,
-            # and causes loop problems otherwise
+            # and causes loop problems otherwise)
             $line_prefix = length($1);
             $line_wrap   = length($2);
 
