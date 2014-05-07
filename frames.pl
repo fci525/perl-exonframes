@@ -70,7 +70,7 @@ foreach my $file (@files) {
         print "\nEnter a gene name for file $file: ";
         $gene_name = <STDIN>;
         $gene_name =~ s/\s//g;
-        print "  ERROR: no name given - try again" unless $gene_name;
+        print "  ERROR: no name given - try again\n" unless $gene_name;
     }
 
     open( my $infile, '<', $file ) || die "Can't open $file: $!\n";
@@ -106,7 +106,7 @@ while ( not $email ) {
       . "results immediately, but Clustal requires an email address be given): ";
     $email = <STDIN>;
     $email =~ s/\s//g;
-    print "  ERROR: no email given - try again" unless $email;
+    print "  ERROR: no email given - try again\n" unless $email;
 }
 
 # runs Clustal twice because BOXSHADE needs the no numbers version, but people
