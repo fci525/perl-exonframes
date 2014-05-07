@@ -75,7 +75,6 @@ This will produce a number of files, including (assuming the `-d` option was not
     aln.aln-clustal.clustal         <- the alignment with no line numbers
     aln.aln-clustal_num.clustal_num <- the alignment with line numbers
     aln_frames.txt                  <- with numbers and frame markers
-    aln_box_frames.txt              <- just frame markers, no alignment
 
 ##### BOXSHADE
 
