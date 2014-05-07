@@ -106,7 +106,7 @@ while ( not $email ) {
       . "results immediately, but Clustal requires an email address be given): ";
     $email = <STDIN>;
     $email =~ s/\s//g;
-    print "  ERROR: no email given - try again\n" unless $email;
+    print "  ERROR: no email given - try again" unless $email;
 }
 
 # runs Clustal twice because BOXSHADE needs the no numbers version, but people
