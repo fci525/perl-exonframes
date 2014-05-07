@@ -64,9 +64,14 @@ my @framelines;
 my @gene_names;
 
 foreach my $file (@files) {
-    print "\nEnter a gene name for file $file: ";
-    my $gene_name = <STDIN>;
-    $gene_name =~ s/\s//g;
+    my $gene_name;
+
+    while ( not $gene_name ) {
+        print "\nEnter a gene name for file $file: ";
+        $gene_name = <STDIN>;
+        $gene_name =~ s/\s//g;
+        print "  ERROR: no name given - try again" unless $gene_name;
+    }
 
     open( my $infile, '<', $file ) || die "Can't open $file: $!\n";
     my @lines = <$infile>;
@@ -94,10 +99,15 @@ open( my $output, '>', "$aln_path.sequence.txt" )
 print $output @fasta_output;
 close($output);
 
-print "\nEnter an email address for Clustal Omega (you will receive your "
-  . "results immediately, but Clustal requires an email address be given): ";
-my $email = <STDIN>;
-$email =~ s/\s//g;
+my $email;
+
+while ( not $email ) {
+    print "\n\nEnter an email address for Clustal Omega (you will receive your "
+      . "results immediately, but Clustal requires an email address be given): ";
+    $email = <STDIN>;
+    $email =~ s/\s//g;
+    print "  ERROR: no email given - try again" unless $email;
+}
 
 # runs Clustal twice because BOXSHADE needs the no numbers version, but people
 # like the version WITH numbers. so get both.

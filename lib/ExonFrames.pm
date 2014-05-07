@@ -28,11 +28,11 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 our @EXPORT = qw(
 );
 
-our $VERSION = '0.8';
+our $VERSION = '0.82';
 
 #<1>========== Subs and Things ==========
 
-my %amino_acids = (
+my %Amino_Acids = (
     A => [ "GCT", "GCC", "GCA", "GCG" ],
     C => [ "TGT", "TGC" ],
     D => [ "GAT", "GAC" ],
@@ -91,7 +91,7 @@ sub exon_split {
     push( @exons, $cur_exon );
 
     if ($invalid) {
-        print "WARNING: invalid characters in exon sequence were removed\n";
+        print "  WARNING: invalid characters in exon sequence were removed";
     }
 
     return @exons;
@@ -107,7 +107,7 @@ sub translate {
 
   STOP: while ( $count <= length($dna_seq) - 3 ) {
         my $codon = substr( $dna_seq, $count, length($dna_seq) > 3 ? 3 : 0 );
-        foreach my $stop ( @{ $amino_acids{"*"} } ) {
+        foreach my $stop ( @{ $Amino_Acids{"*"} } ) {
             if ( $codon eq $stop ) {
                 last STOP;
             }
@@ -118,8 +118,8 @@ sub translate {
     }
 
     foreach my $codon (@codons) {
-      MATCH: foreach my $acid ( keys(%amino_acids) ) {
-            foreach my $alt ( @{ $amino_acids{$acid} } ) {
+      MATCH: foreach my $acid ( keys(%Amino_Acids) ) {
+            foreach my $alt ( @{ $Amino_Acids{$acid} } ) {
                 if ( $codon eq $alt ) {
                     $aa_seq .= $acid;
                     last MATCH;
@@ -365,7 +365,7 @@ sub boxshade_frames {
         if ( $line =~ /$aa_line/ ) {
             $box_wrap += length($2);
         }
-        if ( $line =~ /$lbrk_line/ && $box_wrap ) {
+        if ( $line =~ /$lbrk_line/ and $box_wrap ) {
             last;
         }
     }
@@ -433,7 +433,7 @@ sub boxshade_frames {
             elsif ( $prev_line == 2 ) {
 
                 # page break if necessary
-                if ( $page_break && $break_now ) {
+                if ( $page_break and $break_now ) {
                     push( @output, "\\page\n" );
                     $break_now = 0;
                 }
@@ -454,7 +454,7 @@ sub boxshade_frames {
         elsif ( $line =~ /$pbrk_line/ ) {
 
             # let it break if we were due for one
-            if ( $page_break && $break_now ) {
+            if ( $page_break and $break_now ) {
                 $break_now = 0;
                 push( @output, $line );
             }

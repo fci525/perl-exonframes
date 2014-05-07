@@ -1,4 +1,4 @@
-ExonFrames
+ExonFrames v0.82
 ==========
 
 ExonFrames is a set of functions which can notate the reading frames
