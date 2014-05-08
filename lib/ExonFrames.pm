@@ -28,7 +28,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 our @EXPORT = qw(
 );
 
-our $VERSION = '0.82';
+our $VERSION = '0.83';
 
 #<1>========== Subs and Things ==========
 
@@ -106,7 +106,7 @@ sub translate {
     my $aa_seq = '';
 
   STOP: while ( $count <= length($dna_seq) - 3 ) {
-        my $codon = substr( $dna_seq, $count, length($dna_seq) > 3 ? 3 : 0 );
+        my $codon = substr( $dna_seq, $count, length($dna_seq) >= 3 ? 3 : 0 );
         foreach my $stop ( @{ $Amino_Acids{"*"} } ) {
             if ( $codon eq $stop ) {
                 last STOP;
