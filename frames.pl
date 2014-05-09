@@ -11,6 +11,7 @@ use Getopt::Long;
 use Pod::Usage;
 use File::Basename;
 use WWW::Mechanize;
+use Bio::Tools::CodonTable;
 
 use lib dirname(__FILE__) . '/lib';
 use ExonFrames ':all';
@@ -79,7 +80,10 @@ foreach my $file (@files) {
 
     @lines = exon_split(@lines);
     my $dna_seq = join( '', @lines );
-    my $aa_seq = translate($dna_seq);
+
+    my $codon_cable = Bio::Tools::CodonTable->new();
+    my $aa_seq = $codon_cable->translate($dna_seq);
+    $aa_seq =~ s/\*.*$//g;
 
     my $frameline = frame_line( $dna_seq, $aa_seq, @lines );
 

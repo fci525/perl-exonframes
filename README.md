@@ -1,6 +1,6 @@
 ExonFrames
 ==========
-current v0.83
+current v0.84 (updated dependencies)
 
 ExonFrames is a set of functions which can notate the reading frames
 of codons relative to exon borders in a multiple alignment of some number
@@ -94,12 +94,17 @@ frames.pl client does. They are these:
 
     SOAP::Lite
     WWW::Mechanize
+    Bio::Tools::CodonTable
 
 ### COPYRIGHT AND LICENCE
 
 Copyright (C) 2014 by Andrew Trivette - adt dot pseudologic at gmail dot com
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.18 or,
-at your option, any later version of Perl 5 you may have available.
+This module is free software; you can redistribute it and/or modify it under
+the terms of the Artistic License 2.0. For details, see the full text of the
+license in the file LICENSE.
 
+This program is distributed in the hope that it will be
+useful, but it is provided “as is” and without any express
+or implied warranties. For details, see the full text of
+the license in the file LICENSE.

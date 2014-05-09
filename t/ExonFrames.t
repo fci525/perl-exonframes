@@ -6,7 +6,7 @@
 use strict;
 use warnings;
 
-use Test::More tests => 25;
+use Test::More tests => 16;
 use File::Basename;
 use lib dirname(__FILE__) . '/../lib';
 
@@ -39,32 +39,6 @@ my @output = ( "ACTAGCCATTACGAT",
                "ACTAGATC" );
 
 is_deeply( \@input, \@output, 'exon_split() various' );
-
-##### Test that translation is correct
-
-my @dna_seqs = ( 'ATGAACTTGAGATAGCCA',
-                 'TTAACGAGAGTACCAGTA',
-                 'TACTACCATTAGTACAAGTAC',
-                 'ATACATGAGGACCTAGA',
-                 'ACTACCTCACGGTATTGGGT',
-                 'CGTCGCTCCTCAACCTTAT',
-                 'ATG',
-                 '   ',
-                 'TA');
-
-my @aa_seqs = ( 'MNLR',
-                'LTRVPV',
-                'YYH',
-                'IHEDL',
-                'TTSRYW',
-                'RRSSTL',
-                'M',
-                '',
-                '');
-
-for ( my $i = 0; $i < scalar(@dna_seqs); ++$i ) {
-    is( translate($dna_seqs[$i]), $aa_seqs[$i], "translate() $aa_seqs[$i]" );
-}
 
 ##### Test frame line generation
 

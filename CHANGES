@@ -1,5 +1,9 @@
 Revision history for ExonFrames
 
+v0.84    May 9 2014
+    - frames.pl now uses Bio::Tools::CodonTable for translation
+    - ExonFrames no longer has its own translate()
+
 v0.83    May 8 2014
     - added new tests for translate()
     - fixed translate() to pass tests

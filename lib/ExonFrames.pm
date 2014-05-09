@@ -28,34 +28,9 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 our @EXPORT = qw(
 );
 
-our $VERSION = '0.83';
+our $VERSION = '0.84';
 
 #<1>========== Subs and Things ==========
-
-my %Amino_Acids = (
-    A => [ "GCT", "GCC", "GCA", "GCG" ],
-    C => [ "TGT", "TGC" ],
-    D => [ "GAT", "GAC" ],
-    E => [ "GAA", "GAG" ],
-    F => [ "TTT", "TTC" ],
-    G => [ "GGT", "GGC", "GGA", "GGG" ],
-    H => [ "CAT", "CAC" ],
-    I => [ "ATT", "ATC", "ATA" ],
-    K => [ "AAA", "AAG" ],
-    L => [ "CTT", "CTC", "CTA", "CTG", "TTA", "TTG" ],
-    M => ["ATG"],
-    N => [ "AAT", "AAC" ],
-    P => [ "CCT", "CCC", "CCA", "CCG" ],
-    Q => [ "CAA", "CAG" ],
-    R => [ "CGT", "CGC", "CGA", "CGG", "AGA", "AGG" ],
-    S => [ "TCT", "TCC", "TCA", "TCG", "AGT", "AGC" ],
-    T => [ "ACT", "ACC", "ACA", "ACG" ],
-    U => ["TGA"],
-    V => [ "GTT", "GTC", "GTA", "GTG" ],
-    W => ["TGG"],
-    Y   => [ "TAT", "TAC" ],
-    "*" => [ "TAA", "TAG", "TGA" ],
-);
 
 # takes lines from a FASTA file with exon seqs for a gene, returns an array
 # of the sequences joined and stripped of the FASTA lines
@@ -95,40 +70,6 @@ sub exon_split {
     }
 
     return @exons;
-}
-
-# takes a DNA seq, returns its AA translation
-sub translate {
-    my $dna_seq = shift;
-
-    my @codons;
-    my $count  = 0;
-    my $aa_seq = '';
-
-  STOP: while ( $count <= length($dna_seq) - 3 ) {
-        my $codon = substr( $dna_seq, $count, length($dna_seq) >= 3 ? 3 : 0 );
-        foreach my $stop ( @{ $Amino_Acids{"*"} } ) {
-            if ( $codon eq $stop ) {
-                last STOP;
-            }
-        }
-
-        push( @codons, $codon );
-        $count += 3;
-    }
-
-    foreach my $codon (@codons) {
-      MATCH: foreach my $acid ( keys(%Amino_Acids) ) {
-            foreach my $alt ( @{ $Amino_Acids{$acid} } ) {
-                if ( $codon eq $alt ) {
-                    $aa_seq .= $acid;
-                    last MATCH;
-                }
-            }
-        }
-    }
-
-    return $aa_seq;
 }
 
 # given a DNA sequence, its translation, and the sequences of its exons,
@@ -588,6 +529,7 @@ This module itself does not require any non-core modules. The client included, h
 
     SOAP::Lite
     WWW::Mechanize
+    Bio::Tools::CodonTable
 
 As well as the (INCLUDED) Clustal Omega client provided by EMBL-EBI:
 
@@ -599,9 +541,16 @@ Andrew Trivette - adt dot pseudologic at gmail dot com
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2014 by Andrew Trivette
+Copyright (C) 2014 by Andrew Trivette - adt dot pseudologic at gmail dot com
 
-This library is free software; you can redistribute it and/or modify it under the same terms as Perl itself, either Perl version 5.18 or, at your option, any later version of Perl 5 you may have available.
+This module is free software; you can redistribute it and/or modify it under
+the terms of the Artistic License 2.0. For details, see the full text of the
+license in the file LICENSE.
+
+This program is distributed in the hope that it will be
+useful, but it is provided “as is” and without any express
+or implied warranties. For details, see the full text of
+the license in the file LICENSE.
 
 =cut
 
