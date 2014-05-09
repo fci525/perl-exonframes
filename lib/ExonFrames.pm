@@ -13,7 +13,6 @@ our %EXPORT_TAGS = (
     'all' => [
         qw(
           exon_split
-          translate
           frame_line
           line_wrap
           fasta_format
@@ -171,15 +170,15 @@ sub fasta_format {
 sub clustal_frames {
     my ( $clustal_line_ref, $frame_line_ref ) = @_;
 
-    my @clustal_lines = @{$clustal_line_ref};               # deref
-    my @frame_lines   = @{$frame_line_ref};                 # deref
-    my $aln_re        = qr/(^[^ ]+ +)([A-Z-]+)\s+[0-9]+$/;  # regex for AA lines
+    my @clustal_lines = @{$clustal_line_ref};
+    my @frame_lines   = @{$frame_line_ref};
+    my $aln_re        = qr/(^[^ ]+ +)([A-Z-]+)\s+[0-9]+$/;  # regex - AA lines
 
     my $line_prefix;    # number of spaces before alignment lines
     my $line_wrap;      # number of characters in alignment lines
 
-    my $gene_cnt = 0;   # keep track of what gene we're on
-    my $frame;          # the frameline after exploding, adding spaces, and join
+    my $gene_cnt = 0;
+    my $frame;          # the frameline after explode, adding spaces, and join
     my $frame_seg;      # the part of $frame we actually modified
 
     my @ex_line;        # the exploded alignment line
@@ -209,11 +208,9 @@ sub clustal_frames {
             $line_prefix = length($1);
             $line_wrap   = length($2);
 
-            # explode the lines to loop over them
             @ex_line  = split( '', $2 );
             @ex_frame = split( '', $frame_lines[$gene_cnt] );
 
-            # for every dash in the AA line, put a space in the frameline
             for ( my $i = 0 ; $i < scalar(@ex_line) ; ++$i ) {
                 if ( $ex_line[$i] eq '-' ) {
                     splice( @ex_frame, $i, 0, ' ' );
@@ -247,15 +244,14 @@ sub clustal_frames {
         }
     }
 
-    # and return the boxframes
     return ( \@output, \@box_frames );
 }
 
 sub boxshade_frames {
     my ( $boxshade_line_ref, $box_frame_ref ) = @_;
 
-    my @boxshade_lines = @{$boxshade_line_ref};    # deref
-    my @box_frames     = @{$box_frame_ref};        # deref
+    my @boxshade_lines = @{$boxshade_line_ref};
+    my @box_frames     = @{$box_frame_ref};
 
     my @output;    # will store lines for the output file
 
@@ -285,13 +281,12 @@ sub boxshade_frames {
     my $grp_lines = ( scalar(@box_frames) * 2 ) + 2;
 
     # all used to calculate how many groups of genes fit on one page
-    my $font_size;         # font size
+    my $font_size;
     my $points;            # points (font spec) that a group would take up
     my $inches;            # points converted to inches
     my $margins;           # top and bottom margins added together
     my $space;             # space available on a page in inches
 
-    # loop through every line of the boxshade file and pick out format stuff
     foreach my $line (@boxshade_lines) {
         if ( $line =~ /\\margt([0-9]+)\\margb([0-9]+)\\/ ) {
             $margins = $1 + $2;
@@ -319,13 +314,12 @@ sub boxshade_frames {
     $margins = ( $margins * 0.0006944444 ) + 0.5;
     $space   = 11 - $margins;
 
-    # unless 1 block of genes is too big for a page, we turn on page_break, which
-    # says the number of blocks which can fully fit on one page.
+    # unless 1 block of genes is too big for a page, we turn on page_break,
+    # which says the number of blocks which can fully fit on one page.
     if ( not $inches > $space ) {
         $page_break = int( $space / $inches );
     }
 
-    # line_wrap() all the framelines, and send that array to @boxframe_array
     foreach my $frameline (@box_frames) {
         my @frameline_array = line_wrap( $box_wrap, $frameline );
         push( @boxframe_array, \@frameline_array );
@@ -354,10 +348,10 @@ sub boxshade_frames {
         # if it has a .rtf linebreak, we need to do stuff
         elsif ( $line =~ /$lbrk_line/ ) {
 
-            # if the previous line was amino acids
             if ( $prev_line == 1 ) {
 
-                # deref the proper gene frameline array and print the right line
+                # deref the proper gene frameline array and print the right
+                # line
                 $cur_gene       = $boxframe_array[$gene_cnt];
                 @cur_gene_array = @{$cur_gene};
                 $cur_line       = $cur_gene_array[$line_cnt];
@@ -453,15 +447,9 @@ This takes as input an @array, meant to be the lines of an input file containing
 
     my @exon_seqs = exon_split(@exon_file);
 
-=head2 translate()
-
-Translates a DNA sequence into an amino acid sequence. It does not try different reading frames or accept non-ACTG bases. It is assumed that the input sequence is just a join() of what came out of the exon_split() sub, as it is used in the frames.pl client.
-
-    my $aa_seq = translate($dna_seq);
-
 =head2 frame_line()
 
-Takes as input a DNA sequence, a corresponding amino acid sequence (probably using the above translate()) and an array of exon sequences (generated with exon_split()) for the same gene. Outputs a string marking the reading frames for the exons in the gene. For example:
+Takes as input a DNA sequence, a corresponding amino acid sequence and an array of exon sequences (generated with exon_split()) for the same gene. Outputs a string marking the reading frames for the exons in the gene. For example:
 
 exon sequences:
 
@@ -480,9 +468,13 @@ But since the exons were not all divided into 3-base codons evenly, the '<', '>'
 
 So the '^' means that it's in frame, the '<' means the codon had 1 base left of the border and 2 right, and '>' means 2 left 1 right. The actual translation and frameline are not spaced out to match codons, so it would be:
 
+    use Bio::Tools::CodonTable
+
+    my $codon_table = Bio::Tools::CodonTable->new();
+
     my @exon_seqs = exon_split(@exon_file);
     my $dna_seq   = join( '', @exon_seqs );
-    my $aa_seq    = translate($dna_seq);
+    my $aa_seq    = $codon_table->translate($dna_seq);
 
     my $frameline = frame_line( $dna_seq, $aa_seq, @exon_seqs );
 

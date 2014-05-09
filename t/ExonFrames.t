@@ -20,23 +20,27 @@ use ExonFrames ':all';
 
 my @input = exon_split(
 
-    ( ">this is line 1\n",
-      "ACTAGCCATTACGAT\n",
-      ">this is line 2\n",
-      "TACCAT\n",
-      "TACCAGGATTAAAC\n",
-      ">this is line 3\n",
-      "AAAAAAAAAAAAAAACCCCCTA\r",
-      ">this is line 4\n",
-      "abcdACT   AGaggATC566\n",
-      "\n\n\n")
+    (
+        ">this is line 1\n",
+        "ACTAGCCATTACGAT\n",
+        ">this is line 2\n",
+        "TACCAT\n",
+        "TACCAGGATTAAAC\n",
+        ">this is line 3\n",
+        "AAAAAAAAAAAAAAACCCCCTA\r",
+        ">this is line 4\n",
+        "abcdACT   AGaggATC566\n",
+        "\n\n\n"
+    )
 
 );
 
-my @output = ( "ACTAGCCATTACGAT",
-               "TACCATTACCAGGATTAAAC",
-               "AAAAAAAAAAAAAAACCCCCTA",
-               "ACTAGATC" );
+my @output = (
+    "ACTAGCCATTACGAT",
+    "TACCATTACCAGGATTAAAC",
+    "AAAAAAAAAAAAAAACCCCCTA",
+    "ACTAGATC"
+);
 
 is_deeply( \@input, \@output, 'exon_split() various' );
 
@@ -44,36 +48,50 @@ is_deeply( \@input, \@output, 'exon_split() various' );
 
 my @exons = (
 
-    [ "ACTAGCCATTACGA",
-      "TTACCATTACCAGGATTATA",
-      "CGAAAAAAAAAAAAAAACCCCCT",
-      "ACTAGATCA",
+    [
+        "ACTAGCCATTACGA",
+        "TTACCATTACCAGGATTATA",
+        "CGAAAAAAAAAAAAAAACCCCCT",
+        "ACTAGATCA",
     ],
 
-    [ "ACTAGCCATTACGA",
-      "TTACCATTACCAGGATTATA",
-      "CGAAAAAAAAAAAAAAACCCCCT",
-      "ACTAGATCAT",
+    [
+        "ACTAGCCATTACGA",
+        "TTACCATTACCAGGATTATA",
+        "CGAAAAAAAAAAAAAAACCCCCT",
+        "ACTAGATCAT",
     ],
 
-    [ "ACTAGCCATTACGA",
-      "TTACCATTACCAGGATTATA",
-      "CGAAAAAAAAAAAAAAACCCCCT",
-      "ACTAGATCATC",
+    [
+        "ACTAGCCATTACGA",
+        "TTACCATTACCAGGATTATA",
+        "CGAAAAAAAAAAAAAAACCCCCT",
+        "ACTAGATCATC",
     ],
 
-    [ "ATGACCTATCAGACCAGTC" ],
+    [
+        "ATGACCTATCAGACCAGTC"
+    ],
 );
 
-my @framelines = ( "^   >      <       ^  ",
-                   "^   >      <       ^  ",
-                   "^   >      <       ^  ",
-                   "^     " );
+my @aa_seqs = (
+    "TSHYDYHYQDYTKKKKKPPTRS",
+    "TSHYDYHYQDYTKKKKKPPTRS",
+    "TSHYDYHYQDYTKKKKKPPTRS",
+    "MTYQTS"
+);
+
+my @framelines = (
+    "^   >      <       ^  ",
+    "^   >      <       ^  ",
+    "^   >      <       ^  ",
+    "^     "
+);
 
 for ( my $i = 0; $i < scalar(@exons); ++$i ) {
     my @exon_array = @{ $exons[$i] };
     my $dna_seq = join( '', @exon_array );
-    my $aa_seq = translate($dna_seq);
+    my $aa_seq = $aa_seqs[$i];
 
     is( frame_line($dna_seq, $aa_seq, @exon_array), $framelines[$i],
         "frame_line() $framelines[$i]" );
@@ -102,10 +120,12 @@ my @wrap2 = ( "MPVVNHEDSEFHLSHTEEDKLNEFQVITNFPPEDLPDVVRLLRNHGWQLEPALSRYFDGE\n",
               "EIQPFETTGKQATLQFRTSSGKRFVKKFPSMTTLYQIYQSIGCHIYLAVYSSDPAEWSNA\n",
               "LQDKIRQLSADDDMLCFKEGQLETATATTIEELGHIINNELTSFDLERGKLEFDFELVSP\n",
               "FPKYTVHPNEHMSVDQVPQLWPNGSLLVEALDEEDEEDEENEEQ\n" );
-my @wrap3 = ( "RSNT\n",
-              "VWSM\n",
-              "FESF\n",
-              "S\n" );
+my @wrap3 = (
+    "RSNT\n",
+    "VWSM\n",
+    "FESF\n",
+    "S\n"
+);
 my @wrap4 = ( "R\n", "S\n", "N\n", "T\n", "V\n", "W\n", "S\n", "M\n", "F\n",
               "E\n", "S\n", "F\n", "S\n" );
 my @wrap5 = ( "" );
