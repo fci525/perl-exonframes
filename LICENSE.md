@@ -35,7 +35,7 @@ You are always permitted to make arrangements wholly outside of this license dir
 
 - (1) You are permitted to use the Standard Version and create and use Modified Versions for any purpose without restriction, provided that you do not Distribute the Modified Version.
 
-Permissions for Redistribution of the Standard Version
+### Permissions for Redistribution of the Standard Version
 
 - (2) You may Distribute verbatim copies of the Source form of the Standard Version of this Package in any medium without restriction, either gratis or for a Distributor Fee, provided that you duplicate all of the original copyright notices and associated disclaimers. At your discretion, such verbatim copies may or may not include a Compiled form of the Package.
 
