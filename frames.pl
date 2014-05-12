@@ -64,6 +64,8 @@ my @aa_seqs;
 my @framelines;
 my @gene_names;
 
+my $codon_cable = Bio::Tools::CodonTable->new();
+
 foreach my $file (@files) {
     my $gene_name;
 
@@ -81,7 +83,6 @@ foreach my $file (@files) {
     @lines = exon_split(@lines);
     my $dna_seq = join( '', @lines );
 
-    my $codon_cable = Bio::Tools::CodonTable->new();
     my $aa_seq = $codon_cable->translate($dna_seq);
     $aa_seq =~ s/\*.*$//g;
 

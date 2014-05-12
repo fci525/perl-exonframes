@@ -27,7 +27,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 our @EXPORT = qw(
 );
 
-our $VERSION = '0.84';
+our $VERSION = '0.85';
 
 #<1>========== Subs and Things ==========
 
