@@ -31,8 +31,9 @@ our $VERSION = '0.85';
 
 #<1>========== Subs and Things ==========
 
-# takes lines from a FASTA file with exon seqs for a gene, returns an array
-# of the sequences joined and stripped of the FASTA lines
+# takes lines from a FASTA file with exon seqs for a gene, returns $invalid,
+# which tells the caller if invalid characters were present, and a reference
+# to an array of the sequences joined and stripped of the FASTA lines
 sub exon_split {
     my @lines = @_;
     my @exons;
@@ -63,12 +64,7 @@ sub exon_split {
     }
 
     push( @exons, $cur_exon );
-
-    if ($invalid) {
-        print "  WARNING: invalid characters in exon sequence were removed\n";
-    }
-
-    return @exons;
+    return ( $invalid, \@exons );
 }
 
 # given a DNA sequence, its translation, and the sequences of its exons,
@@ -443,9 +439,9 @@ This module contains various functions to notate the arrangement of the reading 
 
 =head2 exon_split()
 
-This takes as input an @array, meant to be the lines of an input file containing all exons for a given gene in FASTA format. It also returns an array, which contains just the sequences from the input, stripped of their FASTA lines and line wrapping. This funciton will ignore lower-case letters and any base which is not A, C, T, or G. Ambiguity code is not handled.
+This takes as input an @array, meant to be the lines of an input file containing all exons for a given gene in FASTA format. It returns $invalid, telling the caller whether any invalid characters were removed from the exon, and a reference to an array which contains just the sequences from the input, stripped of their FASTA lines and line wrapping. This function will ignore lower-case letters and any base which is not A, C, T, or G. Ambiguity code is not handled.
 
-    my @exon_seqs = exon_split(@exon_file);
+    my ( $invalid, $exon_seqs ) = exon_split(@exon_file);
 
 =head2 frame_line()
 

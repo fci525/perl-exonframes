@@ -1,5 +1,11 @@
 Revision history for ExonFrames
 
+v0.86    May
+    - removed printed warning on invalid characters from ExonFrames
+    - exon_split() returns a value if invalid chars were present
+    - frames.pl now warns on invalid characters
+    - updated tests
+
 v0.85    May 12 2014
     - reduced calls to Bio::Tools::CodonTable->new() in frames.pl
 

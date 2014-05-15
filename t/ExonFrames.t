@@ -18,7 +18,7 @@ use ExonFrames ':all';
 
 ##### Test that exons are being extracted properly
 
-my @input = exon_split(
+my ( $invalid, $array ) = exon_split(
 
     (
         ">this is line 1\n",
@@ -34,6 +34,8 @@ my @input = exon_split(
     )
 
 );
+
+my @input = @{$array};
 
 my @output = (
     "ACTAGCCATTACGAT",

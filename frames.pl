@@ -63,11 +63,13 @@ my $aln_path = uc($file_prefix) . "/$file_prefix";
 my @aa_seqs;
 my @framelines;
 my @gene_names;
+my $invalid;
 
 my $codon_cable = Bio::Tools::CodonTable->new();
 
 foreach my $file (@files) {
     my $gene_name;
+    my $ex_seqs;
 
     while ( not $gene_name ) {
         print "\nEnter a gene name for file $file: ";
@@ -80,13 +82,20 @@ foreach my $file (@files) {
     my @lines = <$infile>;
     close($infile);
 
-    @lines = exon_split(@lines);
-    my $dna_seq = join( '', @lines );
+    ( $invalid, $ex_seqs ) = exon_split(@lines);
+
+    my @seqs = @{$ex_seqs};
+
+    if ($invalid) {
+        print "  WARNING: invalid characters in exon sequence were removed\n";
+    }
+
+    my $dna_seq = join( '', @seqs );
 
     my $aa_seq = $codon_cable->translate($dna_seq);
     $aa_seq =~ s/\*.*$//g;
 
-    my $frameline = frame_line( $dna_seq, $aa_seq, @lines );
+    my $frameline = frame_line( $dna_seq, $aa_seq, @seqs );
 
     push( @aa_seqs,    $aa_seq );
     push( @framelines, $frameline );
@@ -116,8 +125,10 @@ while ( not $email ) {
     print "  ERROR: no email given - try again\n" unless $email;
 }
 
+#
 # runs Clustal twice because BOXSHADE needs the no numbers version, but people
 # like the version WITH numbers. so get both.
+#
 
 print "\n==== RUNNING CLUSTAL ====\n";
 
