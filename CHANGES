@@ -1,5 +1,9 @@
 Revision history for ExonFrames
 
+v0.87    June 19 2014
+    - clarified comments in ExonFrames.pm
+    - updated frames_guide.pdf
+
 v0.86    May
     - removed printed warning on invalid characters from ExonFrames
     - exon_split() returns a value if invalid chars were present
