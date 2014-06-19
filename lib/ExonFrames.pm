@@ -29,7 +29,9 @@ our @EXPORT = qw(
 
 our $VERSION = '0.86';
 
-#<1>========== Subs and Things ==========
+#==============================================================================
+# Subs and Things
+#==============================================================================
 
 # takes lines from a FASTA file with exon seqs for a gene, returns $invalid,
 # which tells the caller if invalid characters were present, and a reference
@@ -421,7 +423,9 @@ sub boxshade_frames {
 
 __END__
 
-#<3>========== Pod Documentation ==========
+#==============================================================================
+# Pod Documentation
+#==============================================================================
 
 =head1 NAME
 
