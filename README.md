@@ -1,6 +1,6 @@
 ExonFrames
 ==========
-current v0.87 (frames.pl requires BioPerl)
+current v0.88
 
 ExonFrames is a set of functions which can notate the reading frames
 of codons relative to exon borders in a multiple alignment of some number

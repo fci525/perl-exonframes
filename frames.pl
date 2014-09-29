@@ -87,11 +87,13 @@ foreach my $file (@files) {
     my @seqs = @{$ex_seqs};
 
     if ($invalid) {
-        print "  WARNING: invalid characters in exon sequence were removed\n";
+        print "  WARNING: invalid characters in exon sequence were removed; " .
+              "if you weren't expecting that, something probably went wrong\n";
     }
 
     my $dna_seq = join( '', @seqs );
 
+    # translate dna and truncate aa seq after the first stop codon
     my $aa_seq = $codon_cable->translate($dna_seq);
     $aa_seq =~ s/\*.*$//g;
 
@@ -118,11 +120,13 @@ close($output);
 my $email;
 
 while ( not $email ) {
-    print "\nEnter an email address for Clustal Omega (you will receive your "
-      . "results immediately, but Clustal requires an email address be given): ";
+    print "\nEnter an email address for Clustal Omega (you will receive your ".
+      "results immediately, but Clustal requires an email address be given): ";
     $email = <STDIN>;
-    $email =~ s/\s//g;
-    print "  ERROR: no email given - try again\n" unless $email;
+    if ( not $email =~ /^[^\s]*\@[^\s]*\.[^\s]*$/ ) {
+        print "  ERROR: invalid email - try again\n";
+        $email = "";
+    }
 }
 
 #
