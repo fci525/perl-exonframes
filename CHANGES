@@ -1,6 +1,6 @@
 Revision history for ExonFrames
 
-v0.88    Sept 2014
+v0.88    Sept 29 2014
     - updated invalid char warning with more info
     - improved email while() loop
 

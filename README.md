@@ -1,6 +1,6 @@
 ExonFrames
 ==========
-current v0.88
+current v0.88A (Sept 29 2014)
 
 ExonFrames is a set of functions which can notate the reading frames
 of codons relative to exon borders in a multiple alignment of some number
